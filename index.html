@@ -45,13 +45,17 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <!-- <li class="nav-item active"> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://btslookalikes.netlify.app/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link(not available)</a>
+                        <a class="nav-link" href="#">About(..)</a>
                     </li>
-                    <li class="nav-item dropdown">
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">History(..)</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
                             href="#"
@@ -72,9 +76,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
+                    </li> -->
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
+                <!-- <form class="form-inline my-2 my-lg-0">
                     <input
                         class="form-control mr-sm-2"
                         type="search"
@@ -84,7 +88,7 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                         Search
                     </button>
-                </form>
+                </form> -->
             </div>
         </nav>
 
@@ -128,6 +132,15 @@
             </div>
             <div class="file-upload-content">
                 <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+                
+                            <div id="loading" class="animated bounce">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <p class="text-center">AI가 당신과 BTS를 매칭중입니다.</p>
+            </div>
+                
+                
                 <p class="result-message"></p>
                 
                 
@@ -203,7 +216,7 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
 
                 reader.onload = function (e) {
                     $('.image-upload-wrap').hide();
-
+                    $('#loading').show();
                     $('.file-upload-image').attr('src', e.target.result);
                     $('.file-upload-content').show();
 
@@ -214,6 +227,7 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
                 init().then(() => {
                     console.log("hello there!");
                     predict();
+                    $('#loading').hide();
                 });
             } else {
                 removeUpload();
