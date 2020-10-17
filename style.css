@@ -187,7 +187,7 @@ body {
 }
 
 .upload-text {
-    width: 58%;
+    width: 75%;
     font-size: 1.5rem;
     line-height: 1.53;
     text-align: center;
@@ -478,6 +478,7 @@ input:checked + label > .knob > i:before {
 
 .ad-banner {
   max-width: 320px;
+  margin:0 auto;
 }
 .select-language {
   font-size: 2em;
