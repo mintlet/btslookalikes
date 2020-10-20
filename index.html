@@ -2,13 +2,13 @@
 <html>
     <head>
         <meta name="naver-site-verification" content="997784333d4dd91e3ff171dbd0d32878b6f45548" />
-        <link rel="shortcut icon" href="img/BTS Favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="img/BTS Favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <!-- Bootstrap CSS -->
-            <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet" />
 
         <link
             rel="stylesheet"
@@ -17,14 +17,24 @@
             crossorigin="anonymous"
         />
         <title>BTS Look Alikes! 방탄소년단 닮은꼴 찾기</title>
-<meta name="description" content="나와 가장 닮은 BTS 멤버는? 구글 AI Teachable Machine이 당신과 가장 어울리는 멤버를 찾아줍니다😃">
-        <meta property="og:type" content="website"> 
-<meta property="og:title" content="BTS 닮은꼴 찾기">
-<meta property="og:description" content="나와 가장 닮은 BTS 멤버는? 구글 AI Teachable Machine으로 찾아봅니다😃">
-<meta property="og:image" content="/img/BTS_result.jpg">
-<meta property="og:url" content="https://btslookalikes.netlify.app/">
+        <meta
+            name="description"
+            content="나와 가장 닮은 BTS 멤버는? 구글 AI Teachable Machine이 당신과 가장 어울리는 멤버를 찾아줍니다😃"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="BTS 닮은꼴 찾기" />
+        <meta
+            property="og:description"
+            content="나와 가장 닮은 BTS 멤버는? 구글 AI Teachable Machine으로 찾아봅니다😃"
+        />
+        <meta property="og:image" content="/img/BTS_result.jpg" />
+        <meta property="og:url" content="https://btslookalikes.netlify.app/" />
         <link rel="stylesheet" href="style.css" />
-        <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f82dce2abba12db"></script>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script
+            type="text/javascript"
+            src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f82dce2abba12db"
+        ></script>
     </head>
 
     <body>
@@ -54,12 +64,14 @@
                 <ul class="navbar-nav mr-auto">
                     <!-- <li class="nav-item active"> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="https://btslookalikes.netlify.app/">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="https://btslookalikes.netlify.app/"
+                            >Home <span class="sr-only">(current)</span></a
+                        >
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About(..)</a>
                     </li>
-                     <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">History(..)</a>
                     </li>
                     <!-- <li class="nav-item dropdown">
@@ -103,26 +115,23 @@
             <h1 class="title">일곱개의 별 BTS, 나와 닮은 별은?</h1>
             <h2 class="subtitle">
                 Feat. AI Google Teachable Machine 👏
-                
             </h2>
         </section>
         <section class="youtube">
             <div class="container mt-5 mb-2 yotube-cover d-flex flex-row-reverse">
-                <img src="img/youtube-copy.jpg" alt="youtube-icion" class="youtube-icon"/><a
+                <img src="img/youtube-copy.jpg" alt="youtube-icion" class="youtube-icon" /><a
                     href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg"
                     class="youtube-link"
                     >Thanks to 조코딩 유튜브 채널</a
                 >
             </div>
-        </section>     
+        </section>
 
         <script
             class="jsbin"
             src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
         ></script>
-        <div class="container file-upload" style="
-                                                  padding-top: 4%;
-             padding-bottom: 4%">
+        <div class="container file-upload" style="padding-top: 4%; padding-bottom: 4%;">
             <div class="image-upload-wrap" style="width: 65%; margin: 0 auto;">
                 <input
                     class="file-upload-input"
@@ -133,65 +142,64 @@
                 <div class="drag-text">
                     <img src="img/upload.svg" class="mt-5 pt-5 upload" style="width: 20%;" />
                     <h3 class="mb-5 pb-5 pt-3 upload-text">
-                        얼굴 사진을 올려놓거나<br>눌러서 업로드하세요!
+                        얼굴 사진을 올려놓거나<br />눌러서 업로드하세요!
                     </h3>
                 </div>
             </div>
             <div class="file-upload-content">
                 <img class="file-upload-image" id="face-image" src="#" alt="your image" />
-                
-                            <div id="loading" class="animated bounce">
-                <div class="spinner-border" role="status">
-                    <span class="sr-only">Loading...</span>
-                </div>
-                <p class="text-center">AI가 당신과 BTS를 매칭중입니다.</p>
-            </div>
-                
-                
-                <p class="result-message"></p>
-                
-                
-                        <div id="label-container"></div>
 
-                
+                <div id="loading" class="animated bounce">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <p class="text-center">AI가 당신과 BTS를 매칭중입니다.</p>
+                </div>
+
+                <p class="result-message"></p>
+
+                <div id="label-container"></div>
+
                 <div class="image-title-wrap">
-                    
-                    
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="addthis_inline_share_toolbox"></div>
-            
-                    
-                    <button type="button mt-3 p-2" onclick="window.location.reload()" class="try-again-btn">
-              
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <div class="addthis_inline_share_toolbox"></div>
+
+                    <button
+                        type="button mt-3 p-2"
+                        onclick="window.location.reload()"
+                        class="try-again-btn"
+                    >
                         <span class="try-again-text">다른 사진으로 재시도</span>
-                                        </button>
+                    </button>
                 </div>
             </div>
-        </div>  
-        <br>
-        <div class="ad-banner">            
-        
-        <ins class="kakao_ad_area" style="display:none;" 
- data-ad-unit    = "DAN-vbkp57mjarsm" 
- data-ad-width   = "320" 
- data-ad-height  = "100"></ins> 
-            </div>
-          <footer class="footer pt-2 container d-flex justify-content-center">
-        <div>
-            <p>※ 업로드하신 사진 데이터는 저장되지 않습니다😃</p>            
-            <!-- <ul id="moreInfo" class="list-inline d-flex justify-content-center">
+        </div>
+        <br />
+        <div class="ad-banner">
+            <ins
+                class="kakao_ad_area"
+                style="display: none;"
+                data-ad-unit="DAN-vbkp57mjarsm"
+                data-ad-width="320"
+                data-ad-height="100"
+            ></ins>
+        </div>
+        <footer class="footer pt-2 container d-flex justify-content-center">
+            <div>
+                <p>※ 업로드하신 사진 데이터는 저장되지 않습니다😃</p>
+                <!-- <ul id="moreInfo" class="list-inline d-flex justify-content-center">
                 <li class="list-inline-item">
                     <a href="./privacy.html">Privacy</a>
                 </li> -->
                 <!-- <li class="list-inline-item">
                     <a href="사진">About</a>
                 </li> -->
-            <!-- </ul> -->
-        </div>
-    </footer>
-        
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-        
+                <!-- </ul> -->
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
         <div id="webcam-container"></div>
         <div id="disqus_thread"></div>
         <script>
@@ -244,53 +252,19 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
         function readURL(input) {
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
-                 /* Check Exif and fix orientation of image */
-
-
-           EXIF.getData(input.files[0], function() {
-             //document.write('Exif=', EXIF.getTag(this, "Orientation"));
-            // return;
-          switch(parseInt(EXIF.getTag(this, "Orientation"))) {
-
-                  case 2:
-                      $("#img-file").attr('class','flip'); break;
-                  case 3:
-                      $("#img-file").attr('class','rotate-180'); break;
-                  case 4:
-                      $("#img-file").attr('class','flip-and-rotate-180'); break;
-                  case 5:
-                      $("#img-file").attr('class','rotate-90'); break;
-                  case 6:
-                      $("#img-file").attr('class','flip-rotate-90'); break;
-                  case 7:
-                      $("#img-file").attr('class','rotate-270'); break;
-                  case 8:
-                      $("#img-file").attr('class','flip-and-rotate-270'); break;
-              }
-
-              $("#m").text('Exif='+EXIF.getTag(this, "Orientation"));
-              $('#img-file').attr('src', e.target.result).width('50%').height('auto');
-
-
-      });
-    };
-      reader.readAsDataURL(input.files[0]);
-  }
-}
-                
 
                 reader.onload = function (e) {
+                    var img = $('')
+                    
                     $('.image-upload-wrap').hide();
                     $('#loading').show();
-                    $('.file-upload-image').attr('src', e.target.result);
-                    $('.file-upload-content').show();
-
+                    $('.file-upload-image').attr('src', e.target.result);                               $('.file-upload-content').show();
                     $('.image-title').html(input.files[0].name);
                 };
 
                 reader.readAsDataURL(input.files[0]);
                 init().then(() => {
-                    console.log("hello there!");
+                    console.log('hello there!');
                     predict();
                     $('#loading').hide();
                 });
@@ -350,97 +324,117 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
             const prediction = await model.predict(image, false);
             prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
             console.log(prediction[0].className);
-            var resultTitle, resultExplain;            
-            
-            switch(prediction[0].className) {
-  case "Jimin":
-                    resultTitle = "지민(Jimin)"    
-                    resultExplain = "당신은 방탄소년단의 리드보컬이자 메인댄서인 지민을 닮았네요! 공연장에선 눈빛만으로도 무대를 장악하는 카리스마를 보여주지만 무대 아래에선 유순하고 착한 순둥이로 돌변하는 지민, 당신과도 비슷한가요?"    
-    break;
-  case "Suga":
-    resultTitle = "슈가(Suga)"
-                    resultExplain = "당신은 방탄소년단의 리드래퍼 슈가를 닮았네요! 언뜻 귀여워 보이는 외모와는 달리 강렬한 랩으로 무대를 채우는 슈가, 가끔은 만사가 귀찮다고 말하지만 좋아하는 일에는 최선을 다하는 그와 당신은 금방 친해질 수 있을 것 같아요!"    
-    break;
-case "RM":
-    resultTitle = "RM"
-                    resultExplain = "당신은 방탄소년단의 리더이자 메인래퍼 RM을 닮았네요! 화려한 랩 실력을 갖춘 방탄의 수상소감 장인, 때론 장난꾸러기 소년같고 때론 누구보다도 어른스러운 모습도 마치 당신과 비슷해요!"
-    break;
-                    case "J-Hope":
-    resultTitle = "제이홉(J-Hope)"
-                    resultExplain = "당신은 방탄소년단의 서브래퍼이자 메인댄서 제이홉을 닮았네요! 긍정에너지와 비글미가 넘치는 무한매력남 제이홉, 그도 당신처럼 주위 사람에게 항상 희망을 심어주는 사람이예요. I'm your Hope, You are my Hope!"    
-    break;
-                   case "JIN":
-    resultTitle = "진(JIN)"
-                    resultExplain = "당신은 방탄소년단의 비주얼담당이자 서브보컬 진을 닮았네요! 당신도 그처럼 가끔 아이돌보다는 배우처럼 느껴지는, 다정다감하고 선해보이는 호감형 인상이예요. 때론 친근하고 재미난 모습도 당신과 비슷해요!"    
-    break;
- case "Jungkook":
-    resultTitle = "정국(Jungkook)"
-                    resultExplain = "당신은 방탄소년단의 메인보컬이자 비주얼담당, 서브래퍼, 리드댄서 정국을 닮았네요! 방탄의 귀여운 미소년이자 황금막내, 멋진 감성보컬과 박력있는 춤으로 유명하죠. 당신도 그를 닮아 다재다능하고 멋진 사람이예요!"    
-    break;   
-                    case "V":
-    resultTitle = "뷔(V)"
-                    resultExplain = "당신은 방탄소년단의 서브보컬 뷔를 닮았네요! 화려한 외모로 모두의 시선을 사로잡는 뷔, 무대 밖에선 넘치는 흥과 장난기로 주변 사람들도 즐겁게 하죠. 당신도 그처럼 어디에서나 빛나는 사람이예요!"    
-    break;   
-                    
-  default:
-                       resultTitle = "알수없음(Not Classified)"         
-                                        resultExplain = ""    
+            var resultTitle, resultExplain;
 
-}
-  var title = "<div class='" + prediction[0].className + "-animal-title'>" + resultTitle + "</div>"
-            var explain = "<div class='animal-explain pt-2'>" + resultExplain + "</div>"            
+            switch (prediction[0].className) {
+                case 'Jimin':
+                    resultTitle = '지민(Jimin)';
+                    resultExplain =
+                        '당신은 방탄소년단의 리드보컬이자 메인댄서인 지민을 닮았네요! 공연장에선 눈빛만으로도 무대를 장악하는 카리스마를 보여주지만 무대 아래에선 유순하고 착한 순둥이로 돌변하는 지민, 당신과도 비슷한가요?';
+                    break;
+                case 'Suga':
+                    resultTitle = '슈가(Suga)';
+                    resultExplain =
+                        '당신은 방탄소년단의 리드래퍼 슈가를 닮았네요! 언뜻 귀여워 보이는 외모와는 달리 강렬한 랩으로 무대를 채우는 슈가, 가끔은 만사가 귀찮다고 말하지만 좋아하는 일에는 최선을 다하는 그와 당신은 금방 친해질 수 있을 것 같아요!';
+                    break;
+                case 'RM':
+                    resultTitle = 'RM';
+                    resultExplain =
+                        '당신은 방탄소년단의 리더이자 메인래퍼 RM을 닮았네요! 화려한 랩 실력을 갖춘 방탄의 수상소감 장인, 때론 장난꾸러기 소년같고 때론 누구보다도 어른스러운 모습도 마치 당신과 비슷해요!';
+                    break;
+                case 'J-Hope':
+                    resultTitle = '제이홉(J-Hope)';
+                    resultExplain =
+                        "당신은 방탄소년단의 서브래퍼이자 메인댄서 제이홉을 닮았네요! 긍정에너지와 비글미가 넘치는 무한매력남 제이홉, 그도 당신처럼 주위 사람에게 항상 희망을 심어주는 사람이예요. I'm your Hope, You are my Hope!";
+                    break;
+                case 'JIN':
+                    resultTitle = '진(JIN)';
+                    resultExplain =
+                        '당신은 방탄소년단의 비주얼담당이자 서브보컬 진을 닮았네요! 당신도 그처럼 가끔 아이돌보다는 배우처럼 느껴지는, 다정다감하고 선해보이는 호감형 인상이예요. 때론 친근하고 재미난 모습도 당신과 비슷해요!';
+                    break;
+                case 'Jungkook':
+                    resultTitle = '정국(Jungkook)';
+                    resultExplain =
+                        '당신은 방탄소년단의 메인보컬이자 비주얼담당, 서브래퍼, 리드댄서 정국을 닮았네요! 방탄의 귀여운 미소년이자 황금막내, 멋진 감성보컬과 박력있는 춤으로 유명하죠. 당신도 그를 닮아 다재다능하고 멋진 사람이예요!';
+                    break;
+                case 'V':
+                    resultTitle = '뷔(V)';
+                    resultExplain =
+                        '당신은 방탄소년단의 서브보컬 뷔를 닮았네요! 화려한 외모로 모두의 시선을 사로잡는 뷔, 무대 밖에선 넘치는 흥과 장난기로 주변 사람들도 즐겁게 하죠. 당신도 그처럼 어디에서나 빛나는 사람이예요!';
+                    break;
+
+                default:
+                    resultTitle = '알수없음(Not Classified)';
+                    resultExplain = '';
+            }
+            var title =
+                "<div class='" +
+                prediction[0].className +
+                "-animal-title'>" +
+                resultTitle +
+                '</div>';
+            var explain = "<div class='animal-explain pt-2'>" + resultExplain + '</div>';
             $('.result-message').html(title + explain);
-            
-//             Jimin: 0.76
-// Suga: 0.12
-// RM: 0.08
-// J-Hope: 0.04
-// JIN: 0.00
-// Jungkook: 0.00
-// V: 0.00
-         
-             var barWidth;
+
+            //             Jimin: 0.76
+            // Suga: 0.12
+            // RM: 0.08
+            // J-Hope: 0.04
+            // JIN: 0.00
+            // Jungkook: 0.00
+            // V: 0.00
+
+            var barWidth;
             for (let i = 0; i < maxPredictions; i++) {
                 if (prediction[i].probability.toFixed(2) > 0.1) {
-                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
+                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + '%';
                 } else if (prediction[i].probability.toFixed(2) >= 0.01) {
-                    barWidth = "5%"
+                    barWidth = '5%';
                 } else {
-                    barWidth = "4%"
+                    barWidth = '4%';
                 }
                 var labelTitle;
                 switch (prediction[i].className) {
-                    case "Jimin":
-                        labelTitle = "Jimin"
+                    case 'Jimin':
+                        labelTitle = 'Jimin';
                         break;
-                    case "Suga":
-                        labelTitle = "Suga"
+                    case 'Suga':
+                        labelTitle = 'Suga';
                         break;
-                    case "RM":
-                        labelTitle = "RM"
+                    case 'RM':
+                        labelTitle = 'RM';
                         break;
-                    case "J-Hope":
-                        labelTitle = "J-Hope"
+                    case 'J-Hope':
+                        labelTitle = 'J-Hope';
                         break;
-                    case "JIN":
-                        labelTitle = "JIN"
+                    case 'JIN':
+                        labelTitle = 'JIN';
                         break;
-                    case "Jungkook":
-                        labelTitle = "Jungkook"
+                    case 'Jungkook':
+                        labelTitle = 'Jungkook';
                         break;
-                    case "V":
-                        labelTitle = "V"
+                    case 'V':
+                        labelTitle = 'V';
                         break;
                     default:
-                        labelTitle = "알수없음"
+                        labelTitle = '알수없음';
                 }
-                var label = "<div class='animal-label d-flex align-items-center'>" + labelTitle + "</div>"
-                var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
+                var label =
+                    "<div class='animal-label d-flex align-items-center'>" + labelTitle + '</div>';
+                var bar =
+                    "<div class='bar-container position-relative container'><div class='" +
+                    prediction[i].className +
+                    "-box'></div><div class='d-flex justify-content-center align-items-center " +
+                    prediction[i].className +
+                    "-bar' style='width: " +
+                    barWidth +
+                    "'><span class='d-block percent-text'>" +
+                    Math.round(prediction[i].probability.toFixed(2) * 100) +
+                    '%</span></div></div>';
                 labelContainer.childNodes[i].innerHTML = label + bar;
             }
         }
-        
-            
+
         //     for (let i = 0; i < maxPredictions; i++) {
         //         const classPrediction =
         //             prediction[i].className + ': ' + prediction[i].probability.toFixed(2);
@@ -456,8 +450,8 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  -->
-       <footer class="footer pt-2 container d-flex justify-content-center">
-        <div>            
+    <footer class="footer pt-2 container d-flex justify-content-center">
+        <div>
             <ul id="moreInfo" class="list-inline d-flex justify-content-center">
                 <li class="list-inline-item">
                     <a href="./privacy.html">개인정보보호 안내</a>
