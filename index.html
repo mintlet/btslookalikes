@@ -244,6 +244,40 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
         function readURL(input) {
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
+                 /* Check Exif and fix orientation of image */
+
+
+           EXIF.getData(input.files[0], function() {
+             //document.write('Exif=', EXIF.getTag(this, "Orientation"));
+            // return;
+          switch(parseInt(EXIF.getTag(this, "Orientation"))) {
+
+                  case 2:
+                      $("#img-file").attr('class','flip'); break;
+                  case 3:
+                      $("#img-file").attr('class','rotate-180'); break;
+                  case 4:
+                      $("#img-file").attr('class','flip-and-rotate-180'); break;
+                  case 5:
+                      $("#img-file").attr('class','rotate-90'); break;
+                  case 6:
+                      $("#img-file").attr('class','flip-rotate-90'); break;
+                  case 7:
+                      $("#img-file").attr('class','rotate-270'); break;
+                  case 8:
+                      $("#img-file").attr('class','flip-and-rotate-270'); break;
+              }
+
+              $("#m").text('Exif='+EXIF.getTag(this, "Orientation"));
+              $('#img-file').attr('src', e.target.result).width('50%').height('auto');
+
+
+      });
+    };
+      reader.readAsDataURL(input.files[0]);
+  }
+}
+                
 
                 reader.onload = function (e) {
                     $('.image-upload-wrap').hide();
